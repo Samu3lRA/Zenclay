@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="ZenClay — una experiencia creativa para desconectarte, crear y encontrar tu momento Zen.">
+  <meta name="theme-color" content="#4A2D18">
   <title>ZenClay | Crea tu momento Zen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +15,8 @@
   <header class="site-header" id="inicio">
     <nav class="nav container" aria-label="Navegación principal">
       <a class="brand" href="#inicio" aria-label="ZenClay inicio">Zen<span>Clay</span></a>
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links">
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="main-menu">
         <a href="#beneficios">Beneficios</a>
         <a href="#testimonios">Testimonios</a>
         <a href="#talleres">Talleres</a>
@@ -41,10 +40,9 @@
             <a class="text-link" href="#beneficios">Descubre los beneficios</a>
           </div>
         </div>
-        <div class="hero-visual reveal delay-1" aria-label="Espacio para imagen principal de ZenClay">
-          <div class="image-placeholder hero-image">
-            <span>IMAGEN HERO</span>
-            <small>Recurso visual ZenClay</small>
+        <div class="hero-visual reveal delay-1">
+          <div class="photo-frame hero-image">
+            <img src="fotos-20260903T170916Z-1-001/fotos/IMG_20250928_144037.jpg" alt="Experiencia ZenClay con arcilla" fetchpriority="high">
           </div>
           <div class="floating-note note-top">Tu momento<br><strong>empieza aquí.</strong></div>
           <div class="floating-note note-bottom">● hecho a mano</div>
@@ -61,27 +59,19 @@
           <p>La arcilla te invita a bajar el ritmo, usar tus manos y concentrarte en lo que está pasando aquí y ahora.</p>
         </div>
         <div class="benefit-grid">
-          <article class="benefit-card reveal"><span class="card-number">01</span><div class="benefit-icon">✦</div><h3>Reduce el estrés</h3><p>Convierte unos minutos de creación en un espacio para respirar y soltar la tensión.</p></article>
-          <article class="benefit-card reveal delay-1"><span class="card-number">02</span><div class="benefit-icon">◌</div><h3>Estimula tu creatividad</h3><p>Experimenta con formas y texturas sin preocuparte por hacerlo perfecto.</p></article>
-          <article class="benefit-card reveal delay-2"><span class="card-number">03</span><div class="benefit-icon">⌁</div><h3>Conecta con el presente</h3><p>Trabajar con tus manos ayuda a enfocar la atención en el proceso y disfrutar el momento.</p></article>
-          <article class="benefit-card reveal"><span class="card-number">04</span><div class="benefit-icon">♡</div><h3>Comparte y conecta</h3><p>Una experiencia para disfrutar a solas o compartir con personas importantes para ti.</p></article>
+          <article class="benefit-card reveal"><span class="card-number">01</span><img class="benefit-icon" src="imagenes-20260903T170916Z-1-001/imagenes/meditacion.png" alt=""><h3>Reduce el estrés</h3><p>Convierte unos minutos de creación en un espacio para respirar y soltar la tensión.</p></article>
+          <article class="benefit-card reveal delay-1"><span class="card-number">02</span><img class="benefit-icon" src="imagenes-20260903T170916Z-1-001/imagenes/bombilla.png" alt=""><h3>Estimula tu creatividad</h3><p>Experimenta con formas y texturas sin preocuparte por hacerlo perfecto.</p></article>
+          <article class="benefit-card reveal delay-2"><span class="card-number">03</span><img class="benefit-icon" src="imagenes-20260903T170916Z-1-001/imagenes/unido.png" alt=""><h3>Conecta con el presente</h3><p>Trabajar con tus manos ayuda a enfocar la atención en el proceso y disfrutar el momento.</p></article>
+          <article class="benefit-card reveal"><span class="card-number">04</span><img class="benefit-icon" src="imagenes-20260903T170916Z-1-001/imagenes/corazon-con-una-sonrisa.png" alt=""><h3>Comparte y conecta</h3><p>Una experiencia para disfrutar a solas o compartir con personas importantes para ti.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="quote-section">
-      <div class="container quote-inner reveal">
-        <span class="quote-mark">“</span>
-        <p>No se trata de crear algo perfecto,<br>se trata de <em>disfrutar mientras lo creas.</em></p>
-      </div>
-    </section>
+    <section class="quote-section"><div class="container quote-inner reveal"><span class="quote-mark">“</span><p>No se trata de crear algo perfecto,<br>se trata de <em>disfrutar mientras lo creas.</em></p></div></section>
 
     <section class="testimonials section" id="testimonios">
       <div class="container">
-        <div class="section-heading centered reveal">
-          <p class="eyebrow">LO QUE DICEN</p>
-          <h2>Momentos que<br><em>se quedan.</em></h2>
-        </div>
+        <div class="section-heading centered reveal"><p class="eyebrow">LO QUE DICEN</p><h2>Momentos que<br><em>se quedan.</em></h2><p>Una experiencia pensada para que desconectes de afuera y vuelvas a conectar contigo.</p></div>
         <div class="testimonial-grid">
           <article class="testimonial-card reveal"><div class="stars">★★★★★</div><p>“Una experiencia demasiado bonita. Por un rato me olvidé del celular, del trabajo y simplemente disfruté creando.”</p><div class="person"><div class="avatar">M</div><div><strong>Mariana</strong><span>Participante</span></div></div></article>
           <article class="testimonial-card featured reveal delay-1"><div class="stars">★★★★★</div><p>“Pensé que no tenía nada de habilidad, pero precisamente eso fue lo mejor. No había presión por hacerlo perfecto.”</p><div class="person"><div class="avatar">D</div><div><strong>Daniel</strong><span>Participante</span></div></div></article>
@@ -93,7 +83,7 @@
     <section class="workshops section" id="talleres">
       <div class="container workshop-layout">
         <div class="workshop-visual reveal">
-          <div class="image-placeholder workshop-image"><span>IMAGEN TALLER</span><small>Foto del espacio / experiencia</small></div>
+          <div class="photo-frame workshop-image"><img src="fotos-20260903T170916Z-1-001/fotos/IMG_20250928_142935.jpg" alt="Taller y proceso creativo de ZenClay" loading="lazy"></div>
           <div class="clay-sticker">ZEN<br><span>CLAY</span></div>
         </div>
         <div class="workshop-copy reveal delay-1">
@@ -112,29 +102,18 @@
 
     <section class="workshop-types section">
       <div class="container">
-        <div class="section-heading centered reveal">
-          <p class="eyebrow">NUESTROS TALLERES</p>
-          <h2>Elige tu forma de<br><em>crear.</em></h2>
-        </div>
+        <div class="section-heading centered reveal"><p class="eyebrow">NUESTROS TALLERES</p><h2>Elige tu forma de<br><em>crear.</em></h2></div>
         <div class="workshop-cards">
-          <article class="workshop-card reveal"><div class="image-placeholder card-image"><span>FOTO</span></div><div class="workshop-card-content"><span class="tag">EXPERIENCIA</span><h3>Taller ZenClay</h3><p>Una experiencia guiada para explorar la arcilla, crear con tus manos y disfrutar el proceso.</p><div class="meta"><span>⌁ Duración: por definir</span><span>✦ Sin experiencia</span></div></div></article>
-          <article class="workshop-card reveal delay-1"><div class="image-placeholder card-image"><span>FOTO</span></div><div class="workshop-card-content"><span class="tag">GRUPOS</span><h3>Una experiencia para compartir</h3><p>Un plan diferente para venir con amigos, pareja, familia o compañeros y crear juntos.</p><div class="meta"><span>⌁ Cupos: por definir</span><span>✦ Todos pueden participar</span></div></div></article>
+          <article class="workshop-card reveal"><div class="photo-frame card-image"><img src="fotos-20260903T170916Z-1-001/fotos/1000484330.jpg" alt="Pieza y proceso de ZenClay" loading="lazy"></div><div class="workshop-card-content"><span class="tag">EXPERIENCIA</span><h3>Taller ZenClay</h3><p>Una experiencia guiada para explorar la arcilla, crear con tus manos y disfrutar el proceso.</p><div class="meta"><span>⌁ Duración: por definir</span><span>✦ Sin experiencia</span></div></div></article>
+          <article class="workshop-card reveal delay-1"><div class="photo-frame card-image"><img src="fotos-20260903T170916Z-1-001/fotos/WhatsApp Image 2026-09-02 at 7.34.34 PM.jpeg" alt="Participantes y experiencia ZenClay" loading="lazy"></div><div class="workshop-card-content"><span class="tag">GRUPOS</span><h3>Una experiencia para compartir</h3><p>Un plan diferente para venir con amigos, pareja, familia o compañeros y crear juntos.</p><div class="meta"><span>⌁ Cupos: por definir</span><span>✦ Todos pueden participar</span></div></div></article>
         </div>
       </div>
     </section>
 
     <section class="contact section" id="contacto">
       <div class="container contact-box reveal">
-        <div class="contact-copy">
-          <p class="eyebrow">TU MOMENTO ZEN</p>
-          <h2>¿Listo para<br><em>crear algo tuyo?</em></h2>
-          <p>Reserva tu experiencia, cuéntanos qué buscas y déjanos acompañarte a crear un momento diferente.</p>
-        </div>
-        <div class="contact-action">
-          <!-- REEMPLAZAR EL HREF POR EL ENLACE REAL DEL GOOGLE FORM -->
-          <a class="button button-light" href="https://forms.google.com/" target="_blank" rel="noopener noreferrer">Reserva tu taller <span>↗</span></a>
-          <p>Te llevará a nuestro formulario de reserva.</p>
-        </div>
+        <div class="contact-copy"><p class="eyebrow">TU MOMENTO ZEN</p><h2>¿Listo para<br><em>crear algo tuyo?</em></h2><p>Reserva tu experiencia, cuéntanos qué buscas y déjanos acompañarte a crear un momento diferente.</p></div>
+        <div class="contact-action"><a class="button button-light" href="https://forms.google.com/" target="_blank" rel="noopener noreferrer">Reserva tu taller <span>↗</span></a><p>Te llevará a nuestro formulario de reserva.</p></div>
       </div>
     </section>
   </main>
